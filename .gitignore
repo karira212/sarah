@@ -1,0 +1,23 @@
+# --------------------------------------------------------------------
+# Ignored files and folders
+# --------------------------------------------------------------------
+/vendor/
+/node_modules/
+/uploads/
+/writable/cache/*
+!/writable/cache/index.html
+/writable/logs/*
+!/writable/logs/index.html
+/writable/session/*
+!/writable/session/index.html
+/writable/uploads/*
+!/writable/uploads/index.html
+/writable/debugbar/*
+!/writable/debugbar/index.html
+/tests/_support/_generated
+.env
+.phpunit.result.cache
+.DS_Store
+.idea
+.vscode
+Thumbs.db
