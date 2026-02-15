@@ -141,5 +141,5 @@ Gunakan akun berikut untuk mencoba aplikasi setelah instalasi (password sama unt
 
 ---
 
-**Dibuat dengan ❤️ untuk kemudahan Ibadah Ramadhan. -->> 081287172216**
+**Dibuat dengan ❤️ untuk kemudahan Ibadah Ramadhan. -->> 081287172216 untuk aplikasi pendidikan lainnya : LMS, CBT Sinta, Mansur, Sikap (Simtem Kesiswaan) **
 *Semoga bermanfaat dan menjadi amal jariyah.*
