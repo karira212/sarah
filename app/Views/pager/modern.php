@@ -1,15 +1,10 @@
 <?php
-$current = $pager->getCurrentPage();
-$pageCount = $pager->getPageCount();
-$perPage = $pager->getPerPage();
-$total = $pager->getTotal();
-$from = ($total === 0) ? 0 : (($current - 1) * $perPage + 1);
-$to = min($current * $perPage, $total);
+use CodeIgniter\Pager\PagerRenderer;
+/** @var PagerRenderer $pager */
+$pager->setSurroundCount(2);
 ?>
 <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
-  <div class="text-muted small">
-    Halaman <?= $current ?>/<?= $pageCount ?> · Menampilkan <?= $from ?>–<?= $to ?> dari <?= $total ?>
-  </div>
+
   <nav aria-label="Pagination">
     <ul class="pagination pagination-sm mb-0">
       <li class="page-item <?= $pager->hasPrevious() ? '' : 'disabled' ?>">
@@ -18,7 +13,7 @@ $to = min($current * $perPage, $total);
         </a>
       </li>
       <li class="page-item <?= $pager->hasPrevious() ? '' : 'disabled' ?>">
-        <a class="page-link" href="<?= $pager->hasPrevious() ? $pager->getPreviousPageURI() : '#' ?>" aria-label="Previous">
+        <a class="page-link" href="<?= $pager->hasPrevious() ? $pager->getPrevious() : '#' ?>" aria-label="Previous">
           <span aria-hidden="true">‹</span>
         </a>
       </li>
@@ -28,7 +23,7 @@ $to = min($current * $perPage, $total);
         </li>
       <?php endforeach ?>
       <li class="page-item <?= $pager->hasNext() ? '' : 'disabled' ?>">
-        <a class="page-link" href="<?= $pager->hasNext() ? $pager->getNextPageURI() : '#' ?>" aria-label="Next">
+        <a class="page-link" href="<?= $pager->hasNext() ? $pager->getNext() : '#' ?>" aria-label="Next">
           <span aria-hidden="true">›</span>
         </a>
       </li>

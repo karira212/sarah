@@ -85,9 +85,7 @@
                     <td><?= esc($user['name']) ?></td>
                     <td><?= esc($user['username']) ?></td>
                     <td>
-                      <span class="badge text-bg-<?= $user['role'] == 'admin' ? 'danger' : ($user['role'] == 'guru' ? 'info' : ($user['role'] == 'walas' ? 'warning' : 'secondary')) ?>">
-                        <?= ucfirst($user['role']) ?>
-                      </span>
+                      <?= ucfirst($user['role']) ?>
                     </td>
                     <td><?= $user['class_name'] ?: '-' ?></td>
                     <td>

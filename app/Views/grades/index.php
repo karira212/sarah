@@ -24,7 +24,9 @@
                    </select>
                 </div>
                 <div class="col-auto">
-                    <button type="button" class="btn btn-secondary" onclick="window.print()"><i class="bi bi-printer"></i></button>
+                    <a class="btn btn-success" href="<?= base_url('grades/export') . '?' . http_build_query(['date' => $currentDate, 'class_id' => $currentClassId]) ?>">
+                        <i class="bi bi-file-earmark-excel"></i> Export Nilai (Excel)
+                    </a>
                 </div>
              </form>
           </div>

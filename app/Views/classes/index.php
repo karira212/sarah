@@ -68,11 +68,11 @@
                   <td><?= $class['name'] ?></td>
                   <td>
                     <?php if($class['walas_name']): ?>
-                      <span class="badge bg-info text-dark">
-                        <i class="bi bi-person-badge"></i> <?= $class['walas_name'] ?>
+                      <span>
+                        <i class="bi bi-person-badge me-1"></i><?= $class['walas_name'] ?>
                       </span>
                     <?php else: ?>
-                      <span class="badge bg-warning text-dark">Belum ada Wali Kelas</span>
+                      <span class="text-muted">Belum ada Wali Kelas</span>
                     <?php endif; ?>
                   </td>
                   <td>

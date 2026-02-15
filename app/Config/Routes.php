@@ -17,6 +17,7 @@ $routes->get('/validation', 'Validation::index', ['filter' => 'auth']);
 $routes->post('/validation/update', 'Validation::updateStatus', ['filter' => 'auth']);
 
 $routes->get('/grades', 'Grades::index', ['filter' => 'auth']);
+$routes->get('/grades/export', 'Grades::export', ['filter' => 'auth']);
 
 // User Management Routes
 $routes->group('users', ['filter' => 'auth'], function($routes) {
